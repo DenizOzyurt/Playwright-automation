@@ -18,7 +18,7 @@ test('Opload single file', async({page})=>{
 })
 
 
-test.only('Opload multible files', async({page})=>{
+test('Opload multible files', async({page})=>{
     await page.goto('https://testautomationpractice.blogspot.com/');
 
     //await page.getByLabel('Upload file').setInputFiles(path.join(__dirname, 'myfile.pdf'));
