@@ -38,9 +38,9 @@ console.log('Pages après login:', page.context().pages().length);
     await page.waitForTimeout(2000)
 //Logout
     // for failure the scenario 
-    console.log('test failure');  
-    await page.click('#logout');  
-    //await page.click('#logout2');
+    //console.log('test failure');  
+    //await page.click('#logout');  
+    await page.click('#logout2');
     await page.waitForTimeout(4000)
 
     await page.close();

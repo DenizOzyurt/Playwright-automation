@@ -13,7 +13,7 @@ test('Full page screenshoot', async({page})=>{
     await page.screenshot({path: 'tests/screenshots/'+'HomeFullPage'+timeActuel()+'.png',fullPage:true})
 });
 
-test.only('Element screenshoot', async({page})=>{
+test('Element screenshoot', async({page})=>{
     await page.goto('https://demoblaze.com/index.html');
     await page.locator('#contcar').screenshot({path: 'tests/screenshots/'+'HomeElement'+Date.now()+'.png'})
     
