@@ -14,7 +14,7 @@ test('Locate multible elements', async({page})=>{
        //console.log(linkText);  
     }
     // for wait elements to charge
-    page.waitForSelector('//div[@id="tbodyid"]/div//h4/a');
+    await page.waitForSelector('//div[@id="tbodyid"]/div//h4/a');
     const productLinks = await page.$$('//div[@id="tbodyid"]/div//h4/a')
     for(const prLink of productLinks)
     {
