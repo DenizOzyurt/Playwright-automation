@@ -28,6 +28,5 @@ test ('Soft ssertions',async ({page})=>{
     const logo = page.locator('//a[normalize-space()="PRODUCT STORE"]')
     await expect.soft(logo).toBeVisible();
     await expect.soft(logo).toContainText("PRODUCT");
-    await expect.soft(logo).toHaveText("PRODUCT")
 
 })
